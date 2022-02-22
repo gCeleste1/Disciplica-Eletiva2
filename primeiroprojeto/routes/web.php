@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/index', [HomeController::class, 'index']);
+
+Route::get('/exercicio1', [HomeController::class,  'primeiroExercicio']);

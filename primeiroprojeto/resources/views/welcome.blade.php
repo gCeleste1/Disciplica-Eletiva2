@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>FisseAPP</title>
-        <link rel="shortcut icon" href="img"> <!-- referencia a imagem -->
+        <link rel="shortcut icon" href="../../public/img"> <!-- referencia a imagem -->
 
         <!-- Google fonts Lato-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,8 +39,19 @@
                    e esta fixada no topo  -->
             <div class="container.py-3"> <!--  py-3 é para dar  padding 3 encima e embaixo do eixo Y -->
                 <a href="#" class="navbar-brand"> <!-- Logo do Fisse -->
-                    <img src="img " alt="">
+                    <img src="img/Logo.Fisse.jpg " alt="FisseAPP">
+                    <span>FisseAPP</span>
                 </a>
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbar-items"
+                        aria-controls="navbar-items"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
             </div>
         </nav>
     </body>
