@@ -20,7 +20,7 @@
 
         <!-- CSS do Projeto (VEM DEPOIS DO CSS DO BOOTSTRAP) -->
 
-        <link rel="stylesheet" href="resources/css/app.css">
+        <link rel="stylesheet" href="{{url('css/app.css')}}">
 
         <!-- Bootstrap icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
@@ -39,19 +39,40 @@
                    e esta fixada no topo  -->
             <div class="container.py-3"> <!--  py-3 é para dar  padding 3 encima e embaixo do eixo Y -->
                 <a href="#" class="navbar-brand"> <!-- Logo do Fisse -->
-                    <img src="img/Logo.Fisse.jpg " alt="FisseAPP">
+                    <img src="img/Logo.Fisse.jpg " id="FisseLogo">
                     <span>FisseAPP</span>
                 </a>
-
+                <br>
+                <br>
                 <button class="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#navbar-items"
                         aria-controls="navbar-items"
                         aria-expanded="false"
-                        aria-label="Toggle navigation">
-                    <i class="bi bi-list"></i>
+                        aria-label="Toggle navigation"
+                        me-auto mb-1 lg-0s>
+                    <i class="bi bi-list" id="sanduiche"> </i>
                 </button>
+                <div class="collapse navbar-collapse" id="navbar-items"> <!-- O ID afeta diretamente o botão, pelo navbar-items -->
+                    <ul class="navbar-nav me-auto mb-1 lg-0s">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active" arial-current="page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" arial-current="page">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" arial-current="page">Favoritos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" arial-current="page">Historico</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" arial-current="page">Chamados</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </body>
